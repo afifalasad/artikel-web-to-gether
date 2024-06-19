@@ -27,15 +27,16 @@
       <button class="search-button">Cari</button>
       <div class="right-align">
         <select class="header-item dropdown">
-          <option value="">Kategori</option>
+          <option value="kategori">Kategori</option>
           <option value="Pendidikan">Pendidikan</option>
           <option value="Olahraga">Olahraga</option>
           <option value="Kesehatan">Kesehatan</option>
           <option value="Indonesia">Indonesia</option>
         </select>
+        <a href="./lozin/tombol login.html"> 
         <div class="header-item oval-box">Login</div>
+      </a>
         <div class="header-item oval-box">Register</div>
-      </div>
     </header>
     <div class="topic">DIGITAL NEWS</div>
     <div class="categories" style="margin-bottom: 40px">
@@ -45,24 +46,26 @@
       <button class="category-item" onclick="showSportsArticles();">
         OLAHRAGA
       </button>
-      <button class="category-item" onclick="showKesehatanArticles();">
+      <button
+        class="category-item" onclick="showKesehatanArticles();">
         KESEHATAN
       </button>
-      <button class="category-item" onclick="showIndonesiaArticles();">
+      <button
+        class="category-item" onclick="showIndonesiaArticles();">
         INDONESIA
       </button>
     </div>
 
     <div
-      class="row row-cols-1 row-cols-md-3 g-3"
-      style="margin-left: 10px; margin-bottom: 40px"
-      id="pendidikanArticles"
-    >
-      <!-- Artikel Pendidikan akan dimuat di sini -->
-    </div>
-    <script>
-      function showPendidikanArticles() {
-        const pendidikanArticles = `
+    class="row row-cols-1 row-cols-md-3 g-3"
+    style="margin-left: 10px; margin-bottom: 40px"
+    id="pendidikanArticles"
+  >
+    <!-- Artikel Pendidikan akan dimuat di sini -->
+  </div>
+  <script>
+    function showPendidikanArticles() {
+      const pendidikanArticles = `
   <div class="col">
       <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
         <img src="https://www.kharismaprestasi.com/wp-content/uploads/2019/11/sd-515x321.jpg" class="card-img-top" alt="...">
@@ -101,10 +104,11 @@
     </div>
 </div>
 `;
-        document.getElementById("pendidikanArticles").innerHTML =
-          pendidikanArticles;
-      }
-    </script>
+      document.getElementById("pendidikanArticles").innerHTML =
+        pendidikanArticles;
+    }
+  </script>
+
 
     <div
       class="row row-cols-1 row-cols-md-3 g-3"
@@ -118,56 +122,45 @@
         const sportsArticles = `
         <div class="col">
           <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
-            <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2023/01/01/3407095498.jpg " class="card-img-top" alt="...">
+            <img src="https://jabarekspres.com/wp-content/uploads/2020/02/persib-juara.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Timnas Sepak Bola Indonesia Menang Melawan Filipina</h5>
-              <p class="card-text"> Tim nasional sepak bola Indonesia meraih kemenangan atas Filipina dengan skor 2-1 dalam pertandingan kualifikasi Piala Dunia 2026. Kemenangan ini memberikan harapan baru bagi Indonesia untuk melaju ke babak berikutnya.</p>
+              <h5 class="card-title">Olahraga 1</h5>
+              <p class="card-text">Deskripsi singkat artikel olahraga pertama.</p>
             </div>
             <div class="card-footer">
-              <small class="text-body-secondary">15 juni 2024</small>
+              <small class="text-body-secondary">Terakhir diperbarui 3 menit yang lalu</small>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
-            <img src="https://www.nawasis.org/portal/pictures/berita/988-img-1784-1-jpg.jpg" class="card-img-top" alt="...">
+            <img src="https://jabarekspres.com/wp-content/uploads/2020/06/persib-juara.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Indonesia Akan Menjadi Tuan Rumah World Water Forum 2024</h5>
-              <p class="card-text">Indonesia terpilih menjadi tuan rumah World Water Forum 2024 yang akan diadakan di Bali. Forum ini akan membahas berbagai isu terkait pengelolaan air dan diharapkan menarik partisipasi dari banyak negara.</p>
+              <h5 class="card-title">Olahraga 2</h5>
+              <p class="card-text">Deskripsi singkat artikel olahraga kedua.</p>
             </div>
             <div class="card-footer">
-              <small class="text-body-secondary">20 Maret 2024</small>
+              <small class="text-body-secondary">Terakhir diperbarui 5 menit yang lalu</small>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
-            <img src="https://th.bing.com/th/id/OIP.d_HU0ELhcAGKY7FpAbMDXwHaFF?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
+            <img src="https://jabarekspres.com/wp-content/uploads/2020/06/persib-juara.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Cristiano Ronaldo Siap Beraksi di Euro 2024</h5>
-              <p class="card-text"> Cristiano Ronaldo mengaku masih merasakan gugup meski sering tampil di berbagai ajang bergengsi. Kapten Timnas Portugal ini siap memberikan performa terbaiknya dalam Euro 2024 yang sedang berlangsung. Ronaldo berharap dapat membawa Portugal melaju jauh dalam turnamen ini.</p>
+              <h5 class="card-title">Olahraga 3</h5>
+              <p class="card-text">Deskripsi singkat artikel olahraga kedua.</p>
             </div>
             <div class="card-footer">
-              <small class="text-body-secondary">15 Juni 2024</small>
+              <small class="text-body-secondary">Terakhir diperbarui 5 menit yang lalu</small>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
-            <img src="https://th.bing.com/th/id/OIP.d_HU0ELhcAGKY7FpAbMDXwHaFF?rs=1&pid=ImgDetMain" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Cristiano Ronaldo Siap Beraksi di Euro 2024</h5>
-              <p class="card-text"> Cristiano Ronaldo mengaku masih merasakan gugup meski sering tampil di berbagai ajang bergengsi. Kapten Timnas Portugal ini siap memberikan performa terbaiknya dalam Euro 2024 yang sedang berlangsung. Ronaldo berharap dapat membawa Portugal melaju jauh dalam turnamen ini.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-body-secondary">15 Juni 2024</small>
-              </div>
           </div>
         </div>
       `;
         document.getElementById("sportsArticles").innerHTML = sportsArticles;
       }
     </script>
+
 
     <div
       class="row row-cols-1 row-cols-md-3 g-3"
@@ -222,6 +215,7 @@
       }
     </script>
 
+    
     <div
       class="row row-cols-1 row-cols-md-3 g-3"
       style="margin-left: 10px; margin-bottom: 40px"
@@ -234,22 +228,22 @@
         const indonesiaArticles = `
     <div class="col">
         <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
-          <img src="https://images.bisnis.com/posts/2022/10/26/1591495/jokowi-2.jpg" class="card-img-top" alt="...">
+          <img src="https://www.kharismaprestasi.com/wp-content/uploads/2019/11/sd-515x321.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Presiden Jokowi Resmikan Proyek Infrastruktur Baru di IKN</h5>
-            <p class="card-text">Presiden Joko Widodo meresmikan beberapa proyek infrastruktur di Ibu Kota Nusantara (IKN), termasuk jalan tol dan fasilitas umum lainnya. Peresmian ini diharapkan dapat mempercepat perkembangan IKN sebagai pusat pemerintahan baru Indonesia.</p>
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
           </div>
           <div class="card-footer">
-            <small class="text-body-secondary"> 15 Juni 2024</small>
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
           </div>
         </div>
       </div>
     <div class="col">
       <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
-        <img src="https://cdn-image.hipwee.com/wp-content/uploads/2018/10/hipwee-disukai-orang-asing-ini-jenis-beras-indonesia-yang-laku-keras-di-pasar-global-0HEPjnkXfi.jpg" class="card-img-top" alt="...">
+        <img src="https://www.kharismaprestasi.com/wp-content/uploads/2019/11/sd-515x321.jpg" class="card-img-top" alt="...">
         <div class="card-body"> 
-          <h5 class="card-title">Harga Beras Melonjak di Pasar Tradisional</h5>
-          <p class="card-text">Harga beras di beberapa pasar tradisional mengalami kenaikan signifikan akibat kurangnya pasokan dan peningkatan permintaan. Pemerintah sedang mengambil langkah-langkah untuk mengatasi masalah ini dan memastikan stabilitas harga pangan .</p>
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         </div>
         <div class="card-footer">
           <small class="text-body-secondary">Last updated 3 mins ago</small>
@@ -258,23 +252,10 @@
     </div>
     <div class="col">
         <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
-          <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1o9WoX.img?w=720&h=405&m=6&x=354&y=284&s=98&d=98" class="card-img-top" alt="...">
+          <img src="https://www.kharismaprestasi.com/wp-content/uploads/2019/11/sd-515x321.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 the card-title">KPK Tangkap Pejabat Tinggi Terkait Kasus Korupsi</h5>
-            <p class="card-text">Komisi Pemberantasan Korupsi (KPK) menangkap seorang pejabat tinggi pemerintah terkait kasus korupsi yang melibatkan proyek pembangunan di daerah. Penangkapan ini merupakan bagian dari upaya KPK untuk memberantas korupsi di Indonesia.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-  </div>
-  <div class="col">
-        <div class="card" style="height: 100%; width: 90%; box-shadow: 2px 2px 5px rgba(0,0,0,0.2);">
-          <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1o9WoX.img?w=720&h=405&m=6&x=354&y=284&s=98&d=98" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 the card-title">KPK Tangkap Pejabat Tinggi Terkait Kasus Korupsi</h5>
-            <p class="card-text">Komisi Pemberantasan Korupsi (KPK) menangkap seorang pejabat tinggi pemerintah terkait kasus korupsi yang melibatkan proyek pembangunan di daerah. Penangkapan ini merupakan bagian dari upaya KPK untuk memberantas korupsi di Indonesia.</p>
+            <h5 the card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
           </div>
           <div class="card-footer">
             <small class="text-body-secondary">Last updated 3 mins ago</small>
